@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TNNTSHOP</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            color: #333;
+            background-color: #f4f4f4;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #6e45e2, #88d3ce);
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            animation: slideDown 1.5s ease-out;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            color: #333;
+            background-color: #fff;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #ddd;
+            transform: scale(1.1);
+        }
+
+        .section {
+            padding: 60px 20px;
+            text-align: center;
+            background-color: #fff;
+            margin: 20px 0;
+            animation: fadeInUp 1.2s ease-out;
+        }
+
+        .section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #6e45e2;
+            position: relative;
+            animation: slideUp 1s ease-out;
+        }
+
+        .service-item, .testimonial-item {
+            margin: 20px 0;
+            opacity: 0;
+            animation: fadeInUp 1s ease-out forwards;
+        }
+
+        .portfolio-grid {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .portfolio-item {
+            width: 45%;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            opacity: 0;
+            animation: fadeInUp 1.5s ease-out forwards;
+        }
+
+        .portfolio-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9em;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        .footer p {
+            opacity: 0.8;
+        }
+
+        /* Анимации */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <h1>TNNTSHOP</h1>
+        <p>TNNT-мы тут для того что-бы мир спасти!</p>
+        <a href="#contact" class="btn">Связаться</a>
+    </header>
+    
+    <section id="about" class="section">
+        <h2>TNNT</h2>
+        <p>Лушчий поставщик быстрого кайфа!</p>
+    </section>
+    
+    <section id="services" class="section">
+        <h2>Услуги</h2>
+        <div class="service-item">
+            <h3>ГАШ ЛСД МЕФ</h3>
+            <p>По самым низким ценам</p>
+        </div>
+        <div class="service-item">
+            <h3>Курьер.Перевозчк,Химик</h3>
+            <p>Самые высокие зарплаты</p>
+        </div>
+    </section>
+    
+    <section id="portfolio" class="section">
+        <h2>Связаться с нами</h2>
+        <div class="portfolio-grid">
+            <a href="https://t.me/Arnoldoshwarc">Оператор</a>
+        </div>
+    </section>
+    
+    <section id="testimonials" class="section">
+        <h2>РАБОТА</h2>
+        <div class="testimonial-item">
+            <p>"Устроится на работу"</p>
+            <p>- напишите менеджеру</p>
+        </div>
+        <div class="testimonial-item">
+            <p>"Купить стафф"</p>
+            <p>- напишите менеджеру</p>
+        </div>
+    </section>
+    
+    <section id="contact" class="section">
+        <h2>Контакты</h2>
+        <p>Telegram: @Arnoldoshwarc</p>
+        <p>Site +vpn: kra16.at/tnnt</p>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; В поиске кракен написать TNNT если сайт не работает пробуйте kra17.kra18/19/20 и так далее</p>
+    </footer>
+</body>
+</html>
